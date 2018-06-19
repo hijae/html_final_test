@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>happy vacation</title>
+<style> 
+body{
+	background-color: #D7FFF1;
+  text-align:center;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+p{
+	color: #285943;
+}
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function day()
+		{
+			document.getElementById("para1").innerHTML="June 22";
+		}
+	</script>
+	<div class="flash animated"><h1 style="text-align:center; color:#8CD790;">Happy Vacation!!</h1>
+	</div>
+	<h2 style="color:#77AF9C;"> I am So Happy!!</h2>
+	<p> so when is Vacation?</p>
+	<p onclick="day()" id="para1">Click to Show!</p>
+	<br/>
+  <img src="image/ocean.jpg" style="max-width: 30%;"><h6><a href="https://unsplash.com/photos/3V8gdLbwDOI"> Photo by Ameen Fahmy on Unsplash</a></h6>
+  <p> Let's go to Ocean!! </p>
+  <h2 style="color:#77AF9C;"><i> I love Vaction!!</i></h2>
+
+</body>
+</html>
